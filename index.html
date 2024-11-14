@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/image-3.png" type="image/icon type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./videos/[4K] One Piece - Justice「AMV_Edit」(Warriors).mp4" type="video/mp4">
+    </video>     
+        <div id="game-container" class="hidden">
+            <div id="header">
+                <h1 class="text1">Full Stack Club</h1>
+                <div id="status">
+                    <div id="timer">20s</div>
+                    <!-- <div id="move-counter">Moves: 0</div> -->
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+            
+            <img src="images/FS qr.png" alt="QR Code" class="qr-code">
+            
+        <div class="wrapper">
+            <ul class="cards">
+                <li class="card">
+            <div class="view view1 front-view">
+               <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-4.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image5.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-1.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-2.png" alt="card-img">
+                <!-- <img class="tut" src="images/image-1.png" alt="card-img"> -->
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-6.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-3.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-1.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-7.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-4.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-5.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-8.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-6.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-2.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-7.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-3.png" alt="card-img">
+            </div>
+        </li>
+        <li class="card">
+            <div class="view front-view">
+                  <img class="tu" src="./images/pngwing.com.png" alt="">
+            </div>
+            <div class="view back-view">
+                <img class="tut" src="images/image-8.png" alt="card-img">
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- <div id="leaderboard">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard-list"></ul>
+</div> -->
+<h1 class="text">Made with ❤️ by vaibhavkothari33</h1>
+</body>
+<script src="script.js"></script>
+</html>
