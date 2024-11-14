@@ -57,7 +57,7 @@ function flipCard({ target: clickedCard }) {
 function matchCards(img1, img2) {
     if (img1 === img2) {
         matched++;
-        if (matched >=4) {
+        if (matched >=3) {
             clearInterval(countdown); // Stop the timer when all cards are matched
             setTimeout(() => {
                 alert("Congratulations! You won the game.");
